@@ -1,9 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FFC300;
-    --secondary: #FE8800;
+    --primary: #FE8800;
+    --secondary: #FFC300;
     --light: #F5F5F5;
     --dark: #14141F;
+    --bgColor: #dce1eb;
+    
+}
+
+body{
+    background-color: var(--bgColor);
 }
 
 .fw-medium {
@@ -24,7 +30,7 @@
 
 
 /*** Spinner ***/
-#spinner {
+/* #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
@@ -35,7 +41,7 @@
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
-}
+} */
 
 
 /*** Button ***/
@@ -83,11 +89,15 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: #FFFFFF !important;
+    color: #404242 !important;
     font-size: 18px;
     font-weight: 600;
     outline: none;
     transition: .5s;
+}
+
+.navbar.navbar-expand-lg.navbar-light{
+    background-color: var(--bgColor);
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
